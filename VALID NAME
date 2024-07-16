@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.Scanner;
+class Password 
+{
+    public static void main(String[] args) 
+    {
+        String Name1, Name2;
+        Scanner S = new Scanner(System.in);
+        Name1 = S.nextLine();
+        Name2 = S.nextLine();
+        if (Name1.equals(Name2)) 
+        {
+            System.out.println("Valid");
+        } else 
+        {
+            System.out.println("Not Valid");
+        }
+    }
+}
