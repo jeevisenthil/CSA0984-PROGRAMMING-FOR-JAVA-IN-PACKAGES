@@ -1,0 +1,25 @@
+//Simple_Interest
+import java.io.*;
+import java.util.Scanner;
+class SI
+{
+public static void main(String[]args)
+{
+int age,p,y;
+float si;
+Scanner s=new Scanner(System.in);
+age=s.nextInt();
+p=s.nextInt();
+y=s.nextInt();
+if(age>60)
+{
+si=p*y*12/100;
+System.out.println("Simple Interest="+si);
+}
+else
+{
+si=p*y*10/100;
+System.out.println("Simple Interest"+si);
+}
+}
+}
