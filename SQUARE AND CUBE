@@ -1,0 +1,14 @@
+//Sq_cu
+import java.io.*;
+import java.util.Scanner;
+class sc
+{
+public static void main(String[]args)
+{
+float a;
+Scanner s=new Scanner(System.in);
+a=s.nextFloat();
+System.out.println("Square="+a*a+"sq.u");
+System.out.println("Cube="+a*a*a+"cu.u");
+}
+}
