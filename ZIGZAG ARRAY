@@ -1,0 +1,27 @@
+import java.util.Arrays;
+public class Zigzag {
+public static void zigzag(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (i % 2 == 0) {
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                }
+            } else {
+                if (arr[i] < arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                }
+            }
+        }
+    }
+private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+public static void main(String[] args) {
+        int[] arr = {4, 3, 7, 8, 6, 2, 1};
+        System.out.println("Original array: " + Arrays.toString(arr));
+        zigzag(arr);
+        System.out.println("Zigzag array: " + Arrays.toString(arr));
+    }
+}
