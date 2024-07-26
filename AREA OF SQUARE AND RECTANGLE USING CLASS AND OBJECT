@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+class shapes {
+int area,area2,l,b;
+void square(int a){
+l=a;
+area=a*a;
+System.out.println("Area of Square: " + area);
+}
+void rectangle(int x,int y){
+l=x;
+b=y;
+area2=x*y;
+System.out.println("Area of rectangle: " + area2);
+}
+}
+class polygon{
+ public static void main(String[] args) {
+shapes s=new shapes();
+s.square(4);
+s.rectangle(4,6);
+}
+}
