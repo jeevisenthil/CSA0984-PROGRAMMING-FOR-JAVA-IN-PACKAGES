@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+class Rectangle {
+    int b, l, area, area2, area3;
+    Rectangle() {
+        b = 0;
+        l = 0;
+        area = b * l;
+        System.out.println("Area: " + area);
+    }
+    Rectangle(int p) {
+        b = p;
+        area2 = b * b;
+        System.out.println("Area: " + area2);
+    }
+    Rectangle(int q, int r) {
+        b = q;
+        l = r;
+        area3 = b * l;
+        System.out.println("Area: " + area3);
+    }
+}
+class Shape {
+    public static void main(String[] args) {
+        Rectangle n = new Rectangle();
+        Rectangle m = new Rectangle(3);
+        Rectangle h = new Rectangle(1, 2);
+    }
+}
