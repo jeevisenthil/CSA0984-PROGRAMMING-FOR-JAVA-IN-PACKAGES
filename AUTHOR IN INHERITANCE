@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.Scanner;
+class Author {
+    String name;
+    boolean contribution;
+
+    void getdata(Scanner s) {
+        name = s.nextLine();
+        contribution = s.nextBoolean();
+        s.nextLine();
+    }
+}
+class Paper extends Author {
+    void display(Scanner s) {
+        super.getdata(s);
+        if (contribution) {
+            System.out.println("Contributed author: " + name);
+        } else {
+            System.out.println("Non-contributed author: " + name);
+        }
+    }
+}
+
+public class A {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        Paper p = new Paper();
+        p.display(s);
+        p.display(s);
+        p.display(s);
+        p.display(s);
+        p.display(s);
+
+    }
+}
